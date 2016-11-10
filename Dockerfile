@@ -7,7 +7,7 @@ MAINTAINER zorino <maximilien1er@gmail.com>
 USER root
 
 # Install dependencies for XGBoost and TensorFlow
-RUN apt-get update -y && apt-get install -y git-core build-essential curl libfreetype6-dev libxft-dev python-matplotlib  \
+RUN apt-get update -y && apt-get install -y git-core build-essential curl libfreetype6-dev libxft-dev libgomp1 python-matplotlib  \
  && curl https://bootstrap.pypa.io/ez_setup.py -o - | python
 
 USER $NB_USER
